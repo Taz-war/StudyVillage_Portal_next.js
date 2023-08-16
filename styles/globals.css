@@ -1631,3 +1631,7 @@ form.is-readonly textarea[disabled] {
         height: 100% !important;
     }
   } */
+  .bg{
+    background-image: url('../public/sydney.PNG');
+
+  }

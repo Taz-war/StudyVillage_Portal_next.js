@@ -39,20 +39,18 @@ const HomePage = () => {
   return (
     <Box sx={{ overflow: "hidden", bgcolor: "#121F28" }}>
       <Box
-       
+        className='bg'
         sx={{
           // backgroundImage: `url(${sydney})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          '& .bg':{
-            backgroundImage: `url(${sydney})`
-          }
+          
         }}
         height={matches === true ? "51svh" : "68svh"}
         // height={'50vh'}
       >
-        <Grid container columns={12}>
+        <Grid container columns={12} zIndex={1}>
           <Grid
             item
             lg={9}
@@ -109,6 +107,9 @@ const HomePage = () => {
             <MainMenu open={open} setOpen={setOpen} />
           </Grid>
         </Grid>
+        {/* <Box sx={{zIndex:-1,position:"fixed",height:`${matches === true ? "51svh" : "68svh"}`,width:'100vw',top:0}}>
+          <Image src={sydney} layout="fill" objectFit="cover"/>
+        </Box> */}
       </Box>
       <Box
         pb={9.5}
